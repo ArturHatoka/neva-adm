@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Нева-принт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/media.css">
+    <link rel="icon" href="src/img/favicon.png" sizes="16x16">
+</head>
+<body>
+<header class="header container-fluid py-2">
+    <nav class="container navbar navbar-expand-lg justify-content-between py-0">
+        <a class="navbar-brand py-0" href="index.html">
+            <img src="src/img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="txt.html" id="navbarDropdown1" role="link">
+                        О компании
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="project.html">Объекты</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="txt.html" id="navbarDropdown2" role="link">
+                        Проектировщику
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="txt.html">Тех. пасморта</a>
+                        <a class="dropdown-item" href="opros.html">Опросные листы</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="txt.html" id="navbarDropdown3" role="link">
+                        Продукция
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="txt.html">Блочные котельные кстановки (БКУ)</a>
+                        <a class="dropdown-item" href="txt.html">Котельные наружного исполнения (КНИ)</a>
+                        <a class="dropdown-item" href="txt.html">Приготовленик горячей воды от солнца</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="txt.html">Новости</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="txt.html">Аква-тепло</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="txt.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column align-items-end">
+            <a class="mb-2 orange font-weight-bold h4" href="tel:+7843277-80-66">+7 (843) 277-80-66</a>
+            <button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn  btn-orange">Заказать звонок</button>
+        </div>
+    </nav>
+</header>
+<main class="main container-fluid">
+    <div class="bg-main py-5 row d-block">
+        <div class="container d-flex my-5 py-5 justify-content-between">
+            <div class="d-flex h-100 flex-column ml-5">
+                <h1 class="clr-white">Блочно-модульные котельные</h1>
+                <p class="h4 clr-white">Производство, поставка и монтаж бытового <br>
+                    и промышленного котельного оборудования</p>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid bg-white py-5">
+        <div class="container d-flex">
+            <div class="d-flex col-6">
+                <p>Текстовое поле для загрузки опросных листов</p>
+            </div>
+            <div class="d-flex col-6">
+                <form action="" class="d-flex flex-column ">
+                    <h4 class="w-75">Для отправки заполненного опросного листа воспользуйтесь формой</h4>
+                    <input type="text" class="sm-input mb-2" placeholder="Ваше имя">
+                    <input type="text" class="sm-input mb-2" placeholder="Ваш e-mail">
+                    <label class="mb-0 text-center w-50 font-weight-bold h5" for="file">Ваш опросный лист</label>
+                    <input type="file" class="sm-input mb-2" id="file" name="file">
+                    <input type="text" class="sm-input mb-2" placeholder="Тема сообщения">
+                    <textarea class="sm-input mb-2" name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="btn btn-orange w-50">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer container-fluid">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column align-items-center">
+            <img class="mb-2" src="src/img/logo.png" alt="">
+            <span class="h4 font-weight-bold text-center">Блочно-модульные котельные</span>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <span class="h4 font-weight-bold">Работаем с 9:00 до 20:00</span>
+            <a class="mb-2 orange font-weight-bold h4" href="tel:+7843277-80-66">+7 (843) 277-80-66</a>
+            <button type="button" class="btn btn-orange" data-toggle="modal" data-target="#exampleModalCenter">Заказать звонок</button>
+        </div>
+        <div class="d-flex w-50">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3a6c8ba48d149a67fce08a7dd00952dc4677b4df1c945ce2eaaa2b8048a106f&amp;width=100%25&amp;height=200&lang=ru_RU&scroll=true"></script>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Обратный звонок</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="d-flex flex-column align-items-center w-auto p-2">
+                    <h4 class="black h4 text-center mb-3">Мы перезвоним Вам в течение 3-х минут</h4>
+                    <input class="sm-input" type="text" placeholder="Ваше имя">
+                    <input class="sm-input mt-4" type="text" placeholder="8 (___) __-__-__">
+                    <button class="btn bg-red-gr mt-3">Отправить заявку</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/js/jquery-3.3.1.slim.min.js"></script>
+<script src="src/js/popper.min.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/slick/slick.min.js"></script>
+<script>
+    $(function() {
+        $("[data-fancybox]").fancybox({
+            speed : 300,
+            loop : true,
+            opacity : 'auto',
+
+        });
+    });
+    $(function() {
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
+    });
+</script>
+</body>
+</html>
+
